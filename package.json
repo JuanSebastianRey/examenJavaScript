@@ -1,0 +1,19 @@
+{
+  "name": "examenJavascript",
+  "version": "1.0.0",
+  "description": "![img](storage/img/Screencast%20from%2015-03-24%2010_27_05.gif)",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "start-all": "npm run clients & product",
+    "dev": "node --watch js/main.js",
+    "clients": "json-server js/db/abrigo.json -p 5409",
+    "product": "json-server js/db/car.json -p 5410"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.0"
+  }
+}
